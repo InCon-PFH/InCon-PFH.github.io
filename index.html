@@ -1,124 +1,201 @@
 <!DOCTYPE html>
 <html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In'Con</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Trispace:wght@100&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>In'Con</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Trispace:wght@100&display=swap" rel="stylesheet" />
+    <style>
+      /* CSS */
 
-  <style>
-    /* CSS */
-    .button-69 {
-      background-color: initial;
-      background-image: linear-gradient(#8614f8 0, #760be0 100%);
-      border-radius: 5px;
-      border-style: none;
-      box-shadow: rgba(245, 244, 247, .25) 0 1px 1px inset;
-      color: #fff;
-      cursor: pointer;
-      display: inline-block;
-      font-family: Inter, sans-serif;
-      font-size: 26px;
-      font-weight: 500;
-      line-height: 60px;
-      margin-left: -4px;
-      outline: 0;
-      text-align: center;
-      transition: all .3s cubic-bezier(.05, .03, .35, 1);
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      vertical-align: bottom;
-      height: 85px;
-      width: 290px;
-
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    .button-69:hover {
-      opacity: .7;
-    }
-
-    @media screen and (max-width: 1000px) {
       .button-69 {
-        font-size: 14px;
-        height: 55px;
-        line-height: 55px;
-        width: 150px;
+        background-color: initial;
+        background-image: linear-gradient(#8614f8 0, #760be0 100%);
+        border-radius: 5px;
+        border-style: none;
+        box-shadow: rgba(245, 244, 247, 0.25) 0 1px 1px inset;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Inter, sans-serif;
+        font-size: 26px;
+        font-weight: 500;
+        line-height: 60px;
+        margin-left: -4px;
+        outline: 0;
+        text-align: center;
+        transition: all 0.3s cubic-bezier(0.05, 0.03, 0.35, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: bottom;
+        height: 85px;
+        width: 290px;
+
+        text-transform: uppercase;
+        letter-spacing: 2px;
       }
-    }
 
-    .box-sh {
-      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    }
-  </style>
-</head>
+      .button-69:hover {
+        opacity: 0.7;
+      }
 
-<body class="text-white flex items-center h-full" style="background-color: #121212;">
-  <!-- navbar -->
-  <div>
-    <nav>
-      <section class="mx-[20%] mt-[1%] p-[10px] box-sh rounded border-b-2 border-pink-400" style="background-color: #1F1B24;">
-        <h1 class="font-bold text-2xl">🔍 Qu'est-ce que l'In'Con 🔍</h1>
-        <div class="mt-[15px]">
-          <p>
-            Notre projet est un salon, type Techday mais pour les projets de
-            Soft Skills d’Intech.
-  
-            Cela inclut les projets de PFH mais aussi la mise en valeur des
-            associations.
-  
-            Cette mise en valeur se fera par des stands individuels pour chaque
-            projet / association, des stands et des salles personnalisées.
-  
-            Mais l'InCon c’est aussi : mise à disposition de nourriture et
-            boisson, activités ludique de partage de savoir ( in’vr, concours
-            d’éloquence, animé ) et la découverte des associations étudiantes.
-          </p>
+      .box-sh {
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+          rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+          rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      }
+
+      #partners-part, #footer-part {
+        position: relative;
+        height: 250px;
+        width: 20%;
+      }
+
+      #partners_container {
+        display: flex;
+        overflow: auto;
+        padding-bottom: 20px;
+      }
+
+      #partners_container {
+        scrollbar-color: pink black;
+        scrollbar-width: thin;
+      }
+
+      #partners_container::-webkit-scrollbar {
+        height: 7px;
+      }
+
+      #partners_container::-webkit-scrollbar-track {
+        background: black;
+      }
+
+      #partners_container::-webkit-scrollbar-thumb {
+        background: pink;
+      }
+
+      #partners_container img {
+        height: 100px;
+        margin-right: 50px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        #div-partners {
+          align-items: center;
+          flex-direction: column;
+        }
+
+        #section-presentation {
+          margin: 10px 0 0 0;
+
+        }
+
+        #partners-part {
+          width: 90%;
+        }
+
+        #button-section {
+          width: 60%;
+          margin: 20px;
+        }
+
+        .button-69 {
+          width: 100%;
+          height: 70px;
+          font-size: 20px;
+        }
+
+        #footer-part {
+          width: 90%;
+        }
+
+        #logo-incon {
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class="text-white flex items-center h-full"
+    style="background-color: #121212"
+  >
+    <!-- navbar -->
+    <div>
+      <nav>
+        <section
+          class="mx-[20%] mt-[1%] p-[10px] box-sh rounded-lg border-b-2 border-pink-400"
+          style="background-color: #1f1b24" id="section-presentation"
+        >
+          <h1 class="font-bold text-2xl">🔍 Qu'est-ce que l'In'Con 🔍</h1>
+          <div class="mt-[15px]">
+            <p>
+              Notre projet est un salon, type Techday mais pour les projets de
+              Soft Skills d’Intech. Cela inclut les projets de PFH mais aussi la
+              mise en valeur des associations. Cette mise en valeur se fera par
+              des stands individuels pour chaque projet / association, des
+              stands et des salles personnalisées. Mais l'InCon c’est aussi :
+              mise à disposition de nourriture et boisson, activités ludique de
+              partage de savoir ( in’vr, concours d’éloquence, animé ) et la
+              découverte des associations étudiantes.
+            </p>
+          </div>
+        </section>
+        <div class="flex justify-evenly">
+          <img
+            class="h-[450px]"
+            id="logo-incon"
+            src="Samuser__Presenter__Partager.png"
+            alt="IN'CON"
+          />
         </div>
-      </section>
-      <div class="flex justify-evenly">
-        <img class="h-[450px]" src="Samuser__Presenter__Partager.png" alt="IN'CON" />
+      </nav>
+      <!-- Qu'est-ce que l'In'Con ? -->
+
+      <div class="flex justify-evenly" id="div-partners">
+      <!-- Nos Partenaires -->
+        <section
+          class="p-[20px] text-center box-sh rounded-lg border-b-2 border-pink-400"
+          id="partners-part"
+          style="background-color: #1f1b24"
+        >
+          <h1 class="font-bold text-xl">📢 Nos Partenaires 📢</h1>
+
+          <div class="mt-[25px]" id="partners_container">
+            <img src="eloquence-min.png" alt="logo PFH éloquence" />
+            <img src="InVR Logo Square - Luma Falfa-min.png" alt="logo PFH invr" />
+            <img
+              src="Logo_Association international_01 - Fumetsu-min.png"
+              alt="logo ASSO international"
+            />
+          </div>
+        </section>
+
+        <section class="p-[20px] text-center flex items-center" id="button-section">
+          <button class="button-69" role="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeo1uFCdpYZSF7a6ULIPFDa8OvJvH82DMAUUfJzPSUJNUbMBA/viewform'">S'inscrire</button>
+        </section>
+
+        <!-- Contact -->
+        <footer
+          class="p-[20px] text-center box-sh rounded-lg border-b-2 border-pink-400 h-auto"
+          style="background-color: #1f1b24"
+          id="footer-part"
+        >
+          <h1 class="font-bold text-xl">📧 Nous contacter 📧</h1>
+          <div class="mt-[25px]">
+            <ul>
+              <li>Mail : contact.incon@gmail.com</li>
+            </ul>
+          </div>
+        </footer>
       </div>
-    </nav>
-    <!-- Qu'est-ce que l'In'Con ? -->
-
-    <!-- Nos Partenaires -->
-    <div class="flex justify-evenly">
-      <section class="p-[20px] text-center box-sh rounded border-b-2 border-pink-400" style="background-color: #1F1B24;">
-        <h1 class="font-bold text-xl">📢 Nos Partenaires 📢</h1>
-
-        <div class="mt-[25px]">
-          <ul>
-            <li>PFH In'VR</li>
-            <li>PFH Concours d'éloquence</li>
-            <li>PFH Animés</li>
-            <li>Association BDJ</li>
-            <li>et bien d'autres encore...</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="p-[20px] text-center flex items-center">
-        <button class="button-69" role="button">S'inscrire</button>
-      </section>
-     
-
-      <!-- Contact -->
-      <footer class="p-[20px] text-center box-sh rounded border-b-2 border-pink-400 h-auto" style="background-color: #1F1B24;">
-        <h1 class="font-bold text-xl">📧 Nous contacter 📧</h1>
-        <div class="mt-[25px]">
-          <ul>
-            <li>Mail : contact.incon@gmail.com</li>
-          </ul>
-        </div>
-      </footer>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
