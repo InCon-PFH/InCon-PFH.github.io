@@ -52,7 +52,8 @@
           rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
       }
 
-      #partners-part, #footer-part {
+      #partners-part,
+      #footer-part {
         position: relative;
         height: 250px;
         width: 20%;
@@ -94,7 +95,6 @@
 
         #section-presentation {
           margin: 10px 0 0 0;
-
         }
 
         #partners-part {
@@ -119,6 +119,10 @@
         #logo-incon {
           height: 300px;
         }
+
+        .h-full {
+          height: auto !important;
+        }
       }
     </style>
   </head>
@@ -129,38 +133,37 @@
   >
     <!-- navbar -->
     <div>
-      <nav>
-        <section
-          class="mx-[20%] mt-[1%] p-[10px] box-sh rounded-lg border-b-2 border-pink-400"
-          style="background-color: #1f1b24" id="section-presentation"
-        >
-          <h1 class="font-bold text-2xl">🔍 Qu'est-ce que l'In'Con 🔍</h1>
-          <div class="mt-[15px]">
-            <p>
-              Notre projet est un salon, type Techday mais pour les projets de
-              Soft Skills d’Intech. Cela inclut les projets de PFH mais aussi la
-              mise en valeur des associations. Cette mise en valeur se fera par
-              des stands individuels pour chaque projet / association, des
-              stands et des salles personnalisées. Mais l'InCon c’est aussi :
-              mise à disposition de nourriture et boisson, activités ludique de
-              partage de savoir ( in’vr, concours d’éloquence, animé ) et la
-              découverte des associations étudiantes.
-            </p>
-          </div>
-        </section>
-        <div class="flex justify-evenly">
-          <img
-            class="h-[450px]"
-            id="logo-incon"
-            src="Samuser__Presenter__Partager.png"
-            alt="IN'CON"
-          />
+      <section
+        class="mx-[20%] mt-[1%] p-[10px] box-sh rounded-lg border-b-2 border-pink-400"
+        style="background-color: #1f1b24"
+        id="section-presentation"
+      >
+        <h1 class="font-bold text-2xl">🔍 Qu'est-ce que l'In'Con 🔍</h1>
+        <div class="mt-[15px]">
+          <p>
+            Notre projet est un salon, type Techday mais pour les projets de
+            Soft Skills d’Intech. Cela inclut les projets de PFH mais aussi la
+            mise en valeur des associations. Cette mise en valeur se fera par
+            des stands individuels pour chaque projet / association, des stands
+            et des salles personnalisées. Mais l'InCon c’est aussi : mise à
+            disposition de nourriture et boisson, activités ludique de partage
+            de savoir ( in’vr, concours d’éloquence, animé ) et la découverte
+            des associations étudiantes.
+          </p>
         </div>
-      </nav>
+      </section>
+      <div class="flex justify-evenly">
+        <img
+          class="h-[450px]"
+          id="logo-incon"
+          src="Samuser__Presenter__Partager.png"
+          alt="IN'CON"
+        />
+      </div>
       <!-- Qu'est-ce que l'In'Con ? -->
 
       <div class="flex justify-evenly" id="div-partners">
-      <!-- Nos Partenaires -->
+        <!-- Nos Partenaires -->
         <section
           class="p-[20px] text-center box-sh rounded-lg border-b-2 border-pink-400"
           id="partners-part"
@@ -170,7 +173,10 @@
 
           <div class="mt-[25px]" id="partners_container">
             <img src="eloquence-min.png" alt="logo PFH éloquence" />
-            <img src="InVR Logo Square - Luma Falfa-min.png" alt="logo PFH invr" />
+            <img
+              src="InVR Logo Square - Luma Falfa-min.png"
+              alt="logo PFH invr"
+            />
             <img
               src="Logo_Association international_01 - Fumetsu-min.png"
               alt="logo ASSO international"
@@ -178,8 +184,17 @@
           </div>
         </section>
 
-        <section class="p-[20px] text-center flex items-center" id="button-section">
-          <button class="button-69" role="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeo1uFCdpYZSF7a6ULIPFDa8OvJvH82DMAUUfJzPSUJNUbMBA/viewform'">S'inscrire</button>
+        <section
+          class="p-[20px] text-center flex items-center"
+          id="button-section"
+        >
+          <button
+            class="button-69"
+            role="button"
+            onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSeo1uFCdpYZSF7a6ULIPFDa8OvJvH82DMAUUfJzPSUJNUbMBA/viewform'"
+          >
+            S'inscrire
+          </button>
         </section>
 
         <!-- Contact -->
